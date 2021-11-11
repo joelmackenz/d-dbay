@@ -121,7 +121,7 @@ async def zoltan_start():
 
         else:
             phrase = misunderstand_response()
-            await long_paused_send(phrase)
+            await long_paused_send([phrase])
 
     if state.zoltan_stage == 2:
         await paused_send(["**You gained one Official Zoltan Brand Collectable Ticket!**",
@@ -136,5 +136,5 @@ async def zoltan_start():
             "and hopes that you will come again."
         ])
         phrase = leaving_response()
-        await long_paused_send(phrase)
+        await long_paused_send([phrase])
         init_state()

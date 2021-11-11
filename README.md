@@ -1,6 +1,6 @@
 # Drecker & Dee
 
-Drecker & Dee is a Discord bot that runs several games. Currently, it can run an auction game (D&D Bay), as well as a Zoltan game (in progress). 
+Drecker & Dee is a Discord bot that runs several games. Currently, it can run an auction game (D&D Bay), as well as a Zoltan game. 
 
 The bot was made for Pathfinder 2e, but compatible with similar TTRPGs (table-top role playing games).
 The bot takes information about a user's item for sale and "auctions" it to a fictional character from the game world.
@@ -8,7 +8,7 @@ The bot takes information about a user's item for sale and "auctions" it to a fi
 
 ## Table of Contents
 
--   [D&D Bay](#D&D-Bay-Overview)
+-   [D&D Bay](#dd-bay-overview)
 
 -   [Zoltan](#zoltan-Overview)
 

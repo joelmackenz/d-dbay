@@ -122,7 +122,7 @@ cooler_futures = {
     ],
     2: [
         "eating some good spicy food",
-        "you may release your deadly neurotoxins at any time, once; all nearby humans get the flee trait."
+        "you may release Deadly Neurotoxins at any time, once; all nearby humans get the flee trait."
     ],
     3: [
         "being a master hide-and-go-seeker",
