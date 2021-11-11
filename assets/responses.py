@@ -1,0 +1,5 @@
+positiveResponses = ["y","yes","yup","yep","affirmative","mmhmm"]
+negativeResponses = ["n","no","nope","negative"]
+exit_responses = ["stop","exit","quit","end","cancel"]
+help_responses = ["help", "$help"]
+info_responses = ["info", "$info"]
