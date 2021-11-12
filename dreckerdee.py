@@ -5,7 +5,7 @@ from zoltan.debug.debug_functions import zoltan_debug
 from state import init_state
 import state
 from dotenv import load_dotenv
-from game_router import router
+from zoltan.router.game_router import game_router
 
 load_dotenv()
 client = discord.Client()
@@ -27,7 +27,7 @@ async def on_message(message):
         state.message = message
 
         if state.game:
-            await router(message)
+            await game_router(message)
         elif ("$auction") in message.content:
             state.game = "ddbay"
             await on_message(message)
