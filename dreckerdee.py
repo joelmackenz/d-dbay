@@ -2,6 +2,7 @@
 import discord
 import os
 from zoltan.debug.debug_functions import zoltan_debug
+from debug.ping_pong import ping_pong
 from state import init_state
 import state
 from dotenv import load_dotenv
@@ -36,6 +37,8 @@ async def on_message(message):
             await on_message(message)
         elif("$debug") in state.message.content:
             await zoltan_debug()
+        elif("$ping") in state.message.content:
+            ping_pong()
 
         state.message = {}
 
