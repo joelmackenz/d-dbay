@@ -54,7 +54,7 @@ def leaving_response():
     if type(response) is list:
         return response
     else:
-        return response
+        return [response]
 
 
 def misunderstand_response():

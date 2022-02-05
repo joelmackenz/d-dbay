@@ -136,5 +136,5 @@ async def zoltan_start():
             "and hopes that you will come again."
         ])
         phrase = leaving_response()
-        await long_paused_send([phrase])
+        await long_paused_send(phrase)
         init_state()

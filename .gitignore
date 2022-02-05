@@ -2,3 +2,4 @@
 get-pip.py
 __pycache__
 .vscode
+venv/
