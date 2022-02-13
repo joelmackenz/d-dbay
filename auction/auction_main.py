@@ -1,8 +1,6 @@
 from auction.stages.auctionSetup import welcome, goodbye, auctionSetup
 from auction.info.info_and_help import auctionHelp, auctionInfo
 from auction.stages.auction import auction
-from assets.databaseCalls import getAuctionInfoBarGraph
-from auction.debug.debugFunctions import runTestAuctions
 from assets.responses import *
 import state
 
@@ -25,16 +23,3 @@ async def auction_main(message):
 
     if state.auction_stage == 14:
         await auction(message)
-
-# Debug
-    if ("$debug") in message.content:
-       runTestAuctions()
-
-    if ("$commonDataGraph") in message.content:
-        await getAuctionInfoBarGraph("common")
-
-    if ("$uncommonDataGraph") in message.content:
-        await getAuctionInfoBarGraph("uncommon")
-
-    if ("$rareDataGraph") in message.content:
-        await getAuctionInfoBarGraph("rare")
